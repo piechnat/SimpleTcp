@@ -2,7 +2,7 @@ program Client;
 
 {$APPTYPE CONSOLE}
 
-uses SimpleTcp17;
+uses SimpleTcp;
 
 var
   Str: AnsiString;
