@@ -39,7 +39,7 @@ begin
     Sock := Serv.Accept;
     if Sock = nil then Continue;
     SList.Add(Sock);
-    StartThread(ClientProc, Sock);
+    StartThread(@ClientProc, Sock);
   until not Serv.Active;
   SList.Lock;
   for I := 0 to SList.Count - 1 do Slist[I].Close;
