@@ -11,7 +11,7 @@ interface
 
 { =========================================================================== }
 
-uses Windows, WinSock;
+uses Windows, WinSock, WinSock2;
 
 const
   NUL = #0;
